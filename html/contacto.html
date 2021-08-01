@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Tag de Viewport -->
+
+    <title>Contacto</title>
+    <meta name="description" content="Programa de inclusión laboral con enfoque interdisciplinario. Envianos tu CV para ingresar a la bolsa de trabajo o si sos Empresa contactanos para el programa.">
+    <meta name="keywords" content="INCLUSION, LABORAL, DISCAPACIDAD, PERSONAS, INSERCIÓN, PROGRAMA, TRABAJO, CONTACTO, EMPRESA, CURRICULUM, BOLSA,">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,400;0,700;0,900;1,100;1,200;1,400;1,700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/bootstrap.min.css"> <!-- CDN de Bootstrap del CSS -->
+    <link rel="stylesheet" href="../sass/contacto.css">
+    <link rel="stylesheet" href="../sass/style.css">
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body class="contacto">
+    <header class="header">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/logoChico.png" class="d-inline-block align-top" alt="Logo PILEI">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="../index.html">INICIO</a>
+                    <a class="nav-item nav-link" href="./equipo.html">EQUIPO</a>
+                    <a class="nav-item nav-link" href="./noticias.html">NOTICIAS</a>
+                    <div class="dropdown show">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          CONTACTO
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#postulante">Postulante</a>
+                            <a class="dropdown-item" href="#empresa">Empresa</a>
+                        </div>
+                      </div>    
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Contact-->
+    <section class="page-section" id="postulante">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">POSTULANTE</h2>
+                <h3 class="section-subheading text-muted">Si querés ingresar en nuestra bolsa de trabajo o tenés alguna duda sobre el proceso, dejanos tu mensaje y tu CV!.</h3>
+            </div>
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- * * SB Forms Contact Form * *-->
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- This form is pre-integrated with SB Forms.-->
+            <!-- To make this form functional, sign up at-->
+            <!-- https://startbootstrap.com/solution/contact-forms-->
+            <!-- to get an API token!-->
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <div class="row align-items-stretch mb-5">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <!-- Name input-->
+                            <input class="form-control" id="name" type="text" placeholder="Tu nombre completo *" data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="name:required">Un nombre es requerido.</div>
+                        </div>
+                        <div class="form-group">
+                            <!-- Email address input-->
+                            <input class="form-control" id="email" type="email" placeholder="Tu mail *" data-sb-validations="required,email" />
+                            <div class="invalid-feedback" data-sb-feedback="email:required">Un mail es requerido.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Mail no válido.</div>
+                        </div>
+                        <div class="form-group mb-md-0">
+                            <!-- Phone number input-->
+                            <input class="form-control" id="phone" type="tel" placeholder="Tu teléfono *" data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">Un teléfono es requerido.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group form-group-textarea mb-md-0">
+                            <!-- Message input-->
+                            <textarea class="form-control" id="message" placeholder="Dejanos un mensaje *" data-sb-validations="required"></textarea>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">Un mensaje es requerido.</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Submit success message-->
+                <!---->
+                <!-- This is what your users will see when the form-->
+                <!-- has successfully submitted-->
+                <div class="d-none" id="submitSuccessMessage">
+                    <div class="text-center text-white mb-3">
+                        <div class="fw-bolder">Mensaje enviado con éxito!</div>
+                        To activate this form, sign up at
+                        <br />
+                        <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                    </div>
+                </div>
+                <!-- Submit error message-->
+                <!---->
+                <!-- This is what your users will see when there is-->
+                <!-- an error submitting the form-->
+                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error al enviar el mensaje</div></div>
+                <!-- Submit Button-->
+                <div class="text-center"><button class="btn--enviar btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Enviar</button></div>
+            </form>
+        </div>
+    </section>
+    <section class="page-section" id="empresa">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">EMPRESA</h2>
+                <h3 class="section-subheading text-muted">Si querés que tu empresa entre en nuestro programa de inclusión laboral o tenés alguna duda sobre el proceso, comunicate con nosotras.</h3>
+            </div>
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- * * SB Forms Contact Form * *-->
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- This form is pre-integrated with SB Forms.-->
+            <!-- To make this form functional, sign up at-->
+            <!-- https://startbootstrap.com/solution/contact-forms-->
+            <!-- to get an API token!-->
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <div class="row align-items-stretch mb-5">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <!-- Name input-->
+                            <input class="form-control" id="name" type="text" placeholder="Tu nombre completo *" data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="name:required">Un nombre es requerido.</div>
+                        </div>
+                        <div class="form-group">
+                            <!-- Email address input-->
+                            <input class="form-control" id="email" type="email" placeholder="Tu mail *" data-sb-validations="required,email" />
+                            <div class="invalid-feedback" data-sb-feedback="email:required">Un mail es requerido.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Mail no válido.</div>
+                        </div>
+                        <div class="form-group mb-md-0">
+                            <!-- Phone number input-->
+                            <input class="form-control" id="phone" type="tel" placeholder="Tu teléfono *" data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">Un teléfono es requerido.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group form-group-textarea mb-md-0">
+                            <!-- Message input-->
+                            <textarea class="form-control" id="message" placeholder="Dejanos un mensaje *" data-sb-validations="required"></textarea>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">Un mensaje es requerido.</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Submit success message-->
+                <!---->
+                <!-- This is what your users will see when the form-->
+                <!-- has successfully submitted-->
+                <div class="d-none" id="submitSuccessMessage">
+                    <div class="text-center text-white mb-3">
+                        <div class="fw-bolder">Mensaje enviado con éxito!</div>
+                        To activate this form, sign up at
+                        <br />
+                        <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                    </div>
+                </div>
+                <!-- Submit error message-->
+                <!---->
+                <!-- This is what your users will see when there is-->
+                <!-- an error submitting the form-->
+                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error al enviar el mensaje</div></div>
+                <!-- Submit Button-->
+                <div class="text-center"><button class="btn--enviar btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Enviar</button></div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer container-fluid contacto">
+        <p class="footer__texto footer__texto--mediano d-sm-none d-md-none d-lg-block d-xl-block">PILEI</h3>
+        <ul class="redesSociales">
+            <li>
+                <a href="https://www.facebook.com/Pilei.inclusion">
+                    <img src="../assets/facebook.png" alt="Logo de Facebook">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/pilei.inclusion/">
+                    <img src="../assets/instagram.png" alt="Logo de Instagram">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/company/pilei-inclusion-laboral/">
+                    <img src="../assets/linkedin.png" alt="Logo de Linkedin">
+                </a>
+            </li>
+            <li>
+                <a href="mailto:agusleonw@gmail.com">
+                    <img src="../assets/mail.png" alt="Logo de Mail">
+                </a>
+            </li>
+        </ul>
+        <ul class="menuFooter d-sm-none d-md-none d-lg-block d-xl-block">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./equipo.html">equipo</a></li>
+            <li><a href="./noticias.html">Noticias</a></li>
+            <li class="ultimoItem"><a href="#">Contacto</a></li>
+        </ul>
+        <p class="footer__texto footer__texto--chico">Buenos Aires, Argentina</p>
+        <p class="footer__texto footer__texto--chico">Web design by Agustina León</p>
+    </footer>
+
+    <!-- BOOTSTRAP -->
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script><!-- CDN de la librería de Jquery  -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> <!-- CDN de la librería de Popper  -->
+    <script src="../js/bootstrap.min.js"></script> <!-- CDN de Bootstrap del JS -->
+</body>
+</html>

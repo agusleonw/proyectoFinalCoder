@@ -1,0 +1,137 @@
+/* ---------HOME PAGE--------- */
+
+
+.homePage{
+    grid-area: homePage;
+    height:$altura-body*0.4;
+    article.container-fluid{
+        height:$total-padre;
+        @include flex(flex,center,center);
+        div.col{
+            @include flex(flex,center,center);
+            flex-direction: column;
+            .homePage__titulo--grande{
+                font-size: 10em;
+            }
+            .homePage__titulo--mediano{
+                font-size: 2em;
+                text-align: center;
+            }
+        }
+    }
+
+    @media (min-width: 320px) and (max-width: 480px){
+        height:20%;
+    }
+    @media (min-width: 480px) and (max-width: 767px){
+        height:20%;
+    }
+    @media (min-width: 768px) and (max-width: 991px){
+        height:20%;
+    }
+}
+
+/* ---------PRESENTACION MARCA--------- */
+
+.presentacionMarca{
+    grid-area: presentacionMarca;
+    height:$altura-body*0.4;
+    background-color: $blanco;
+    article.container-fluid{
+        height:$total-padre;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        div.row.presentacionMarca__contenedor--texto{
+            p{
+                margin:2em 4em 2em 4em;
+                width:$total-padre;
+                font-size: $font-size-mediana;
+                text-align: center;
+                @media (min-width: 320px) and (max-width: 480px){
+                    font-size: $font-size-chica;
+                }
+                @media (min-width: 480px) and (max-width: 767px){
+                    font-size: $font-size-chica;
+                }
+                @media (min-width: 768px) and (max-width: 991px){
+                    font-size: $font-size-chica;
+                }
+            }
+            @media (min-width: 320px) and (max-width: 480px){
+                height:20%;
+            }
+            @media (min-width: 480px) and (max-width: 768px){
+                height:20%;
+            }
+            @media (min-width: 768px) and (max-width: 991px){
+                height:20%;
+            }
+        }
+        div.row.presentacionMarca__contenedor--circulos{
+                @include flex(flex,space-around,center);
+                flex-direction: row;
+                div.col{
+                    @include flex(flex,center,center);
+                    div.rounded-circle{
+                        @include size(15em,15em);
+                        @media (min-width: 320px) and (max-width: 480px){
+                            @include size(16em,16em);
+                        }
+                        @include flex(flex,space-around,center);
+                        text-align: center;
+                        p{
+                            width:90%;
+                        }
+                    }
+                }
+                @media (min-width: 320px) and (max-width: 480px){
+                    height:70%;
+                }
+                @media (min-width: 480px) and (max-width: 768px){
+                    height:70%;
+                }
+                @media (min-width: 768px) and (max-width: 991px){
+                    height:70%;
+                }
+        }
+    }
+
+    @media (min-width: 320px) and (max-width: 480px){
+        height:70%;
+    }
+    @media (min-width: 480px) and (max-width: 767px){
+        height:70%;
+    }
+    @media (min-width: 768px) and (max-width: 991px){
+        height:70%;
+    }
+
+}
+
+/* BOOTSTRAP */
+
+//MAP
+$theme-colors:(
+    amarillo:rgb(249, 220, 100),
+    celeste:rgb(125, 230, 215),
+    rosa:rgb(230, 131, 195)
+);
+
+//BUCLE EACH
+@each $color, $value in $theme-colors {
+    .rounded-circle--#{$color} {
+      background-color: $value !important;
+    }
+}
+
+
+.presentacionMarca {
+    article.container-fluid{
+        div.row{
+            p{
+                font-size: $font-size-chica;
+            }
+        }
+    } 
+}

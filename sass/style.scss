@@ -1,0 +1,21 @@
+/*MIXINS*/
+@mixin flex($display,$justify,$align){
+    display:$display;
+    align-items: $align;
+    justify-content:$justify;
+}
+
+@mixin size($height,$width){
+    height:$height;
+    width:$width;
+}
+
+@import "variables.scss";
+@import "body.scss";
+@import "menu.scss";
+@import "homePage.scss";
+@import "noticias.scss";
+@import "footer.scss";
+//@import "error.scss";
+
+

@@ -1,0 +1,35 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  height: 100em;
+  background-image: url(../assets/fondoBody.png);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    height: 150em;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  body {
+    height: 100em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    height: 100em;
+  }
+}
+
+body.noticias {
+  height: 150em;
+}
+/*# sourceMappingURL=body.css.map */
