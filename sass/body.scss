@@ -25,7 +25,7 @@ body{
 }
 
 body.noticias{
-    height: $altura-body+50em;
+    height: $altura-body;
     @media (min-width: 320px) and (max-width: 991px){
         height:$altura-body;
         background-color: $celeste-claro;

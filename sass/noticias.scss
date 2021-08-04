@@ -1,19 +1,21 @@
 /* ---------PORTAL DE NOTICIAS--------- */
 
 section.container-fluid{
-    height:($altura-body + 50em)-($altura-body*0.2);
-    article.container{
+    height:($altura-body)-($altura-body*0.2);
+    article.container-fluid{
         height:$total-padre;
-        @include flex(flex,space-evenly,stretch);
-        flex-direction: column;
-        align-content: center;
+        @include flex(flex,space-around,stretch);
+        flex-direction: row;
+        align-content: space-around;
+        flex-wrap: wrap;
         div.row{
-            height:15%;
+            height:30%;
             background-color: white;
+            width:45%;
             div.col-6.texto{
                 
                 h1{
-                font-size: $font-size-mediana;
+                font-size: $font-size-chica;
                 font-weight: $negrita;
                 margin:1em;
                 @media (min-width: 320px) and (max-width: 991px){
@@ -21,7 +23,7 @@ section.container-fluid{
                 }
                 }
                 p{
-                    font-size: $font-size-chica;
+                    font-size: $font-size-mini;
                     font-weight:$normal;
                     margin:2em;
                     &.d-xs-none{
@@ -41,6 +43,7 @@ section.container-fluid{
                 }
                 ol{
                     margin-left:2.5em;
+                    font-size: $font-size-mini;
                 }
                 @media (min-width: 320px) and (max-width: 991px){
                     max-width: 100%;
@@ -50,6 +53,7 @@ section.container-fluid{
                     flex-direction: column;
                 }
             }
+            
             div.col-6.multimedia{
                 height: $total-padre;
                 text-align: center;
@@ -61,6 +65,9 @@ section.container-fluid{
                 img{
                     @include size(60%,60%)
                 }
+                // .multimedia--video{
+                //     display: none;
+                // }
                 &.rosa{
                     background-color: $rosa-claro;
                 }
@@ -89,6 +96,21 @@ section.container-fluid{
                 }
                 @media (min-width: 320px) and (max-width: 991px){
                     display: none;
+                }
+            }
+            &.video{
+                @include flex(flex,center,center);
+                flex-direction: column;
+                *{
+                    max-height: 100%;
+                }
+                .col-6.texto{
+                    height:20%;
+                    max-width: 100%;
+                }
+                .col-6.multimedia{
+                    height:80%;
+                    
                 }
             }
             @media (min-width: 320px) and (max-width: 991px){
