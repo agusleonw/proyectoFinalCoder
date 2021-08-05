@@ -16,7 +16,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,400;0,700;0,900;1,100;1,200;1,400;1,700&family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/bootstrap.min.css"> <!-- CDN de Bootstrap del CSS -->
         <link rel="stylesheet" href="./sass/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="./css/aos.css">
+        <!-- Cargamos nuesto archivo Java Script-->
+	    <script type="text/javascript" src="js/functions.js"></script>
     </head>
     <body>
         <header class="header">
@@ -59,23 +61,23 @@
         <section class="presentacionMarca">
             <article class="container-fluid">
                 <div class="row presentacionMarca__contenedor--texto">
-                    <p>
+                    <p data-aos="fade-up">
                         Somos el nexo entre entornos laborales y las personas con discapacidad que busquen insertarse en el mundo laboral. 
                         Nuestro rol es acompañar este proceso capacitando tanto al joven/adulto que va a ingresar al mercado laboral, como al entorno laboral que lo recibirá. 
                     </p>
-                    <p> Ofrecemos un programa con enfoque interdisciplinario, basado en los principios del respeto a la diversidad, derecho al trabajo e inclusión.</p>
+                    <p data-aos="fade-up"> Ofrecemos un programa con enfoque interdisciplinario, basado en los principios del respeto a la diversidad, derecho al trabajo e inclusión.</p>
                 </div>
 
                 <div class="row presentacionMarca__contenedor--circulos">
                         <div class="col col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-                            <div class="rounded-circle rounded-circle--amarillo animate__animated animate__fadeInUp">
+                            <div class="rounded-circle rounded-circle--amarillo" data-aos="fade-up">
                                 <p>
                                     1 de cada 10 argentinos tiene algún tipo de discapacidad.
                                 </p>
                             </div>
                         </div>
                         <div class="col col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-                            <div class="rounded-circle rounded-circle--celeste">
+                            <div class="rounded-circle rounded-circle--celeste" data-aos="fade-up">
                                 <p>
                                     10,2% de las personas poseen un tipo de discapacidad en Argentina, esto representa unas 3.571.983 personas.
                                 </p>
@@ -83,14 +85,14 @@
                         </div>
 
                         <div class="col col-sm-6 col-md-6 col-lg-3 col-xl-3">
-                            <div class="rounded-circle rounded-circle--rosa">
+                            <div class="rounded-circle rounded-circle--rosa" data-aos="fade-up">
                                 <p>
                                     25,3% de los hogares en Argentina viven con alguna persona con discapacidad.
                                 </p>
                             </div>
                         </div>
                         <div class="col col-sm-6 col-md-6 col-lg-3 col-xl-3">
-                            <div class="rounded-circle rounded-circle--amarillo">
+                            <div class="rounded-circle rounded-circle--amarillo" data-aos="fade-up">
                                 <p>
                                     Por ley se debe cumplir un cupo del 4% en el sector estatal de inclusión laboral.
                                 </p>
@@ -140,10 +142,12 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> <!-- CDN de la librería de Popper  -->
         <script src="./js/bootstrap.min.js"></script> <!-- CDN de Bootstrap del JS -->
 
-        <!-- WOW -->
-
-        <script src="./js/wow.min.js"></script>
-        <script> new WOW().init();</script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init({
+            once: false,
+        });
+        </script>
 
 
     </body>

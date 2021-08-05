@@ -1,5 +1,8 @@
 .header{
-    margin-top:8em ;
+    margin-top:8em;
+    &.equipo{
+        margin-top: 5em;
+    }
     nav{
         div{
             div{

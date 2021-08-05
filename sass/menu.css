@@ -2,6 +2,10 @@
   margin-top: 8em;
 }
 
+.header.equipo {
+  margin-top: 5em;
+}
+
 .header nav div div a {
   margin-right: 2em;
 }

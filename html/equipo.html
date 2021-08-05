@@ -18,9 +18,12 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../sass/style.css">
     <link rel="stylesheet" href="../sass/equipo.css">
+    <link rel="stylesheet" href="../css/aos.css">
+    <!-- Cargamos nuesto archivo Java Script-->
+	<script type="text/javascript" src="../js/functions.js"></script>
 </head>
 <body>
-    <header class="header">
+    <header class="header equipo">
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
             <a class="navbar-brand" href="../index.html">
                 <img src="../assets/logoChico.png" class="d-inline-block align-top" alt="Logo PILEI">
@@ -87,18 +90,18 @@
                         Somos personas con ganas de aportar nuestro granito para ir derribando barreras, con mucho amor por nuestro trabajo. Especialmente, la inclusión laboral.
                     </p>
                 </div>
+                <div class="text-center bg-light">
+                    <h2 class="section-heading text-uppercase">Qué hacemos</h2>
+                    <p class="large text-muted">Fomentamos la inclusión laboral de las personas con discapacidad y creamos entornos laborales que sean inclusivos de forma plena. Acompañando a la persona en proceso de inclusión en el entorno con la modalidad de <b>Empleo con Apoyo</b></p>
+                </div>
             </div>
         </div>
     </section>
      <!-- About-->
      <section class="page-section" id="about">
         <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Qué hacemos</h2>
-                <h3 class="section-subheading text-muted">Fomentamos la inclusión laboral de las personas con discapacidad y creamos entornos laborales que sean inclusivos de forma plena. Acompañando a la persona en proceso de inclusión en el entorno con la modalidad de <b>Empleo con Apoyo</b></h3>
-            </div>
             <ul class="timeline">
-                <li>
+                <li data-aos="fade-up">
                     <div class="timeline-image">
                         <img class="rounded-circle img-fluid" src="" alt="..." />
                     </div>
@@ -109,7 +112,7 @@
                         <!-- <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div> -->
                     </div>
                 </li>
-                <li class="timeline-inverted">
+                <li class="timeline-inverted" data-aos="fade-up">
                     <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
@@ -117,7 +120,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li data-aos="fade-up">
                     <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
@@ -125,7 +128,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="timeline-inverted">
+                <li class="timeline-inverted" data-aos="fade-up">
                     <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
@@ -133,7 +136,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li data-aos="fade-up">
                     <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
@@ -141,7 +144,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="timeline-inverted">
+                <li class="timeline-inverted" data-aos="fade-up">
                     <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
@@ -149,7 +152,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="timeline-inverted">
+                <li class="timeline-inverted" data-aos="fade-up">
                     <div class="timeline-image">
                         <h4>
                             Definir
@@ -202,6 +205,13 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script><!-- CDN de la librería de Jquery  -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> <!-- CDN de la librería de Popper  -->
     <script src="../js/bootstrap.min.js"></script> <!-- CDN de Bootstrap del JS -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: false,
+        });
+    </script>
 
     
 </body>

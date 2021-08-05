@@ -456,4 +456,8 @@
   height: 8em;
   width: 8em;
 }
+
+div.text-center.bg-light {
+  margin-top: 5em;
+}
 /*# sourceMappingURL=equipo.css.map */
