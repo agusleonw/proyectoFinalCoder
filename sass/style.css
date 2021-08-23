@@ -58,6 +58,12 @@ body.galeria {
   height: 60em;
 }
 
+@media (min-width: 320px) and (max-width: 991px) {
+  body.galeria {
+    height: 100em;
+  }
+}
+
 .header {
   margin-top: 8em;
 }
@@ -306,7 +312,7 @@ img.d-inline-block.align-top {
 
 /* ---------PORTAL DE NOTICIAS--------- */
 section.container-fluid {
-  height: 80em;
+  height: 90%;
 }
 
 section.container-fluid article.container-fluid {

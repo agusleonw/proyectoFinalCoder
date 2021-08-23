@@ -1,7 +1,7 @@
 /* ---------PORTAL DE NOTICIAS--------- */
 
 section.container-fluid{
-    height:($altura-body)-($altura-body*0.2);
+    height:90%;
     article.container-fluid{
         height:$total-padre;
         @include flex(flex,space-around,stretch);

@@ -282,9 +282,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   height: 10em;
 }
 
@@ -328,6 +328,10 @@
   text-align: left;
 }
 
+.timeline > li.timeline-inverted > .timeline-panel {
+  padding: 25px 20px 0 100px;
+}
+
 .timeline > li.timeline-inverted > .timeline-panel:before {
   right: auto;
   left: -15px;
@@ -351,6 +355,10 @@
   color: inherit;
   font-size: 1.25em;
   background-color: white;
+}
+
+.timeline .timeline-heading h4.fin, .timeline .timeline-heading .h4.fin {
+  background-color: #CFF6F0;
 }
 
 .timeline .timeline-heading h4.subheading, .timeline .timeline-heading .subheading.h4 {
@@ -378,9 +386,9 @@
   }
   .timeline > li .timeline-image {
     left: 50%;
-    width: 100px;
-    height: 100px;
-    margin-left: -50px;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
   }
   .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
     font-size: 13px;
@@ -402,9 +410,9 @@
     padding: 0 20px 20px;
   }
   .timeline > li .timeline-image {
-    width: 150px;
-    height: 150px;
-    margin-left: -75px;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
   }
   .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
     font-size: 18px;

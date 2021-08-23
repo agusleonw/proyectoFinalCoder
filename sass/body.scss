@@ -43,5 +43,8 @@ body.contacto{
 
 body.galeria{
     height: $altura-body-chico;
+    @media (min-width: 320px) and (max-width: 991px){
+        height:$altura-body;
+    }
 }
 
