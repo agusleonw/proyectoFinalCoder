@@ -54,6 +54,10 @@ body.noticias {
   }
 }
 
+body.galeria {
+  height: 60em;
+}
+
 .header {
   margin-top: 8em;
 }
@@ -329,6 +333,19 @@ section.container-fluid article.container-fluid div.row {
   height: 30%;
   background-color: white;
   width: 45%;
+}
+
+section.container-fluid article.container-fluid div.row div.col-6.texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 section.container-fluid article.container-fluid div.row div.col-6.texto h1 {

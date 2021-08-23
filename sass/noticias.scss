@@ -13,7 +13,9 @@ section.container-fluid{
             background-color: white;
             width:45%;
             div.col-6.texto{
-                
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
                 h1{
                 font-size: $font-size-chica;
                 font-weight: $negrita;
