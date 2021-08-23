@@ -9,3 +9,4 @@ En este proyecto se desarrollo y se diseñó el sitio web para que el emprendimi
 2. Diseño con CSS
 3. Agregado del framework Boostrap para el diseño
 4. Agregado de SASS para el diseño del código de CSS
+5. Agregado de SEO para posicionamiento en web
